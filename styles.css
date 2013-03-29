@@ -1,0 +1,104 @@
+/* css reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, 
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;outline:0;}
+body, html {height:100%;}
+body {
+	background:#555;
+	margin:0;
+	padding:0;
+	font:13px/18px arial;
+}
+	
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}		
+
+h1 {font-size:42px;font-weight:normal;color:#fff;text-shadow:0 2px 0 #000;margin:0;padding:20px 0 30px;}
+h1 .super {font-size:14px;text-transform:uppercase;display:block;padding:0 0 18px;color:#888;text-shadow:none;}
+h2 {font-size:28px;font-weight:normal;clear:both;color:#aaa;margin:10px 0 40px;display:none;}
+h3 {color:#333;}
+
+*.clearfix:after {content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;} 
+.clearfix {display:block;} html[xmlns] .clearfix {display:block;} *:first-child+html .clearfix {height:1%;zoom:1;} * html .clearfix {height:1%;zoom:1;}
+
+.container {background:#d2d1d0;box-shadow:0 5px 5px #333;border-radius:8px;width:980px;overflow:hidden;margin:0 auto;border:1px solid #CCCCCC;}
+#wrapPage {padding:20px 0 50px;}
+#wrapPage .gutter {}
+#header {box-shadow:inset 5px 0 15px #222;background:#333;padding:40px 30px 30px;border-bottom:1px solid #111;border-top:1px solid #444;}
+#header p {font-size:16px;color:#888;padding:0;line-height:24px;}
+#nav {display:none;background:#333;padding:20px 30px;border-bottom:4px solid #018cba;border-top:1px solid #444;}
+#wrapLocalizerForm {background:#fff;padding:40px 26px;margin:4px;border-radius:8px;}
+#footer {color:#888;text-align:center;font-size:12px;padding:20px;}
+
+.topLink {float:right;font-size:13px;font-weight:normal;color:#888;}
+
+#nav .localizerFormMenu {padding:0;margin:0;list-style:none;position:relative;z-index:80;}
+#nav .localizerFormMenu li {float:left;display:inline;position:relative;margin:0 10px 0 0;}
+#nav .localizerFormMenu li a {font-size:14px;font-weight:bold;line-height:1;border-top:1px solid #555;text-shadow:0 2px 0 #333;display:block;padding:8px 15px;border-bottom:1px solid #111;background:#555;color:#fff;text-decoration:none;border-radius:8px;}
+#nav .localizerFormMenu li:hover > a,
+#nav .localizerFormMenu li a.selected {background:#e2e1e0;color:#333;text-shadow:none;border-top:1px solid #fff;}
+#nav .localizerFormMenu ul {border-radius:8px;overflow:hidden;border:1px solid #333;position:absolute;top:102%;left:-50000px;width:200px;padding:0;margin:0;}
+#nav .localizerFormMenu li:hover ul {display:block;left:0;}
+#nav .localizerFormMenu ul li {width:100%;margin:0;padding:0;line-height:18px;border-top:1px solid #777;border-bottom:1px solid #333;}
+#nav .localizerFormMenu ul li a {border-radius:0;font-weight:normal;font-size:12px;text-shadow:none;}
+#nav .localizerFormMenu > li.jsonLink {float:right;margin:0;}
+#nav .localizerFormMenu > li.jsonLink a {
+	background: #018CBA;
+	color:#fff;
+	font-weight:bold;
+	font-size:18px;
+	border-top:0;
+	position:absolute;
+	top:-6px;
+	right:0;
+	line-height:21px;
+	padding:10px 15px;
+	white-space:nowrap;
+	border-bottom:3px solid #007297;
+}
+#nav .localizerFormMenu > li.jsonLink:hover > a,
+#nav .localizerFormMenu > li.jsonLink > a.selected {text-shadow:0 2px 0 #333;}
+
+.actions a.addAbove {background:url('icon-insert-row-before.gif') no-repeat;height:22px;width:22px;display:block;float:left;margin:1px 2px 2px 0;text-indent:-50000px;}
+.actions a.addBelow {background:url('icon-insert-row-after.gif') no-repeat;height:22px;width:22px;display:block;float:left;margin:1px 2px 2px 0;text-indent:-50000px;}
+.actions a.deleteRow {background:url('delete-row-icon.gif') no-repeat;height:22px;width:22px;display:block;float:left;margin:1px 2px 2px 0;text-indent:-50000px;}
+
+#localizerForm {position:relative;}
+
+.localizerFormTextarea {width:858px;height:400px;font-size:12px;margin:0 0 30px;}
+.localizerFormContainer {display:none;width:100%;}
+.localizerFieldset {padding:0 0 20px;margin:0 0 20px;}
+.localizerFieldset h4 {font-size:18px;margin:0;padding:0 0 8px;}
+.localizerFormSelector {padding:8px;background:#f2f1f0;border-radius:5px;margin:8px 0;border-top:1px solid #E2E1E0;}
+.localizerFormSelector label {margin:0 8px 0 0;}
+.localizerFormSelector input {width:674px;border:1px solid #ccc;padding:4px;}
+.localizerFormTerms {}
+.localizerFormTerms table {width:100%;border-collapse:collapse}
+.localizerFormTerms table a {color:#555;text-decoration:underline;}
+.localizerFormTerms table tr.deleted td {background:#e2e1e0 !important;border:1px solid #e2e1e0;border-top:1px solid #aaa}
+.localizerFormTerms table tr.deleted td input {border:1px solid #CCC;padding:1px;color:#888;background:transparent;}
+.localizerFormTerms table th {background:#333;border-bottom:2px solid #018CBA;color:#fff;text-align:left;padding:6px;border-right:1px solid #555;}
+.localizerFormTerms table td {}
+.localizerFormTerms table td input {width:100%;padding:4px;border:1px solid #ccc;border-right:0;}
+.localizerFormTerms table td:nth-child(4) input {border-right:1px solid #ccc;}
+.localizerFormTerms table td input:focus,
+.localizerFormTerms table td input.needed {background:#fffeea;}
+.localizerFormTerms table tr.odd td {background:#f2f1f0;}
+.localizerFormTerms table td.actions {padding:0 0 0 8px;}
+
+.message {background:#f2f1f0;border:2px solid #f00;padding:12px;margin:0 0 20px;border-radius:8px;}
+.button {background:#333;color:#fff;font-weight:bold;border-radius:8px;text-decoration:none;padding:8px 15px;display:block;float:left;margin:15px 8px 15px 0;border-bottom:3px solid #000;}
+.button-generate {background:#7B8C00;border-color:#637A00;}
+.button-download {display:none;}
+
+.errors {}
+.errors input {background:#fff !important;color:#333;border:2px solid #f00!important;}
+.loader {background:url('ajax-loader.gif') no-repeat;width:24px;height:24px;text-indent:-500000px;margin:10px 0;}
+
+#fileRetriever label {font-weight:bold;color:#555;display:block;padding:0 0 8px;font-size:18px;}
+#fileRetriever input {width:600px;padding:8px 12px;font-size:16px;font-weight:normal;line-height:24px;color:#888;border:1px solid #ccc;margin:0 10px 0 0;float:left;}
+#fileRetriever a {margin:0;text-transform:uppercase;}

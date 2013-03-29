@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<title>Translation File Editor</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="jquery.generateFile.plugin.js"></script>
+		<script src="localizer-form.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body id="BodyId">
+			
+		<div id="wrapPage">
+			<div class="container">
+				<div class="gutter clearfix">
+					<div id="header">
+						<h1>Translation File - Editor</h1>
+						<p>Use this form to edit the translation file for your NetCommunity website. (NOTE: This form will not save the terms to your database; it simply creates the file for you. You will need to upload the generated file to NetCommunity manually.)</p>
+					</div>
+					<div id="nav" class="clearfix"></div>
+					<div id="wrapLocalizerForm" class="clearfix">
+						<div id="fileRetriever">
+							<label for="fileUrl">Link (URL) to Current Translation File:</label><input name="fileUrlField" type="text" class="fileUrlField" id="fileUrl" />
+							<a href="#" class="button button-generate" id="lookupFile">Submit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				Blackbaud, Inc. &copy; 2013
+			</div>
+		</div>
+	
+		<script>
+		$(document).ready(function() {
+			$('#wrapLocalizerForm').LocalizationEditor();
+		});
+		</script>
+	
+	</body>
+</html>
